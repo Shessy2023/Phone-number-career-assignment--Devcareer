@@ -5,7 +5,7 @@ const carrierLogo = document.getElementById("carrierIcon");
 phoneInput.addEventListener("input", function () {
   const phoneNumber = phoneInput.value;
 
-  // Prefix expressions to match carrier prefixes
+  // make the Prefix expressions to match carrier prefixes with a const
 
   const mtnPrefixes = [
     "0803",
