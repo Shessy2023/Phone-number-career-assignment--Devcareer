@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone number Career assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <h1>DevCareer phone Number Carrier logo</h1>
+    <!-- create an form that collects all data inclusive of phone number, make it fanciful like a sign-up form, data form  -->
+    <form action="/signup" method="post">
+      <p>
+        <label aria-required="true">Title</label><b>*</b><br />
+        <label>
+          <input type="radio" name="title" value="mr" />
+          Mr
+        </label>
+        <label>
+          <input type="radio" name="title" value="mrs" />
+          Mrs
+        </label>
+        <label>
+          <input type="radio" name="title" value="miss" />
+          Miss
+        </label>
+        <label>
+          <input type="radio" name="title" value="ms" />
+          Ms
+        </label>
+        <label>
+          <input type="radio" name="title" value="others" />
+          Others
+        </label>
+      </p>
+      <p>
+        <label for="firstName">First name</label><b>*</b><br />
+        <input type="text" id="firstName" placeholder="Enter First Name" required/>
+      </p>
+      <p>
+        <label for="LastName">Last name</label><b>*</b><br />
+        <input type="text" id="LastName" placeholder="Enter Last Name" required/>
+      </p>
+      <p>
+        <label for="Email">Email</label><b>*</b><br />
+        <input type="email" id="Email" placeholder="Enter Email" aria-required="true" autocomplete="email" />
+      </p>
+      <p>
+        <label for="phoneNumber">Enter Phone Number:</label><b>*</b><br />
+        <input type="tel" class= "phoneNumer" id="phoneNumber" placeholder="e.g., 08012345678" aria-required="true" maxlength="14"
+          minlength="11"/> <br>          
+        <img src="default.jpg" alt="Carrier Icon" id="carrierIcon" class="carrier-icon" />
+      </p> 
+
+      <p>
+        <label for="password">Password</label><b>*</b><br />
+        <input type="password" id="password" placeholder="Enter Your Password" aria-required="true" minlength="8" maxlength="20"/>
+      </p>
+      <p>
+        <label id="country">Country</label><br />
+        <select>
+          <option>pick a Country</option>
+          <option>India</option>
+          <option>United States</option>
+          <option>Indonesia</option>
+          <option>Kenya</option>
+          <option>Ghana</option>
+          <option>Uganda</option>
+          <option>Tanzania</option>
+          <option>Nigeria</option>
+          <option>South Africa</option>
+          <option>Egypt</option>
+          <option>Brazil</option>
+        </select>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" value="terms" />
+          I agree to the <a href="/terms">terms and conditions</a>
+        </label>
+      </p>
+      <p>
+        <button type="submit" >Sign up</button>
+        <button type="reset">Reset form</button>
+      </p>
+    </form>
+  </main>
+  <script src="index.js" defer></script>
+</body>
+<footer>
+  &copy; Shessylee tech productions 2023
+</footer>
+</html>
